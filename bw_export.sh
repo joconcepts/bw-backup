@@ -1,7 +1,7 @@
 #!/bin/bash
 
 echo "Starting export script..."
-bw login --quit --apikey $BW_EMAIL
+bw login --quiet --apikey $BW_EMAIL
 
 if [[ $(bw status | jq -r .status) == "unauthenticated" ]]
 then 
