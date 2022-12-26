@@ -1,5 +1,7 @@
 #!/bin/bash
 
+export OPENSSL_CONF=/dev/null
+
 echo "Starting export script..."
 bw login --quiet --apikey $BW_EMAIL
 
